@@ -11,12 +11,12 @@ const App = () => (
           <Background
             style={{
               height: `${Math.max(100 - percent * 0.5, 50)}vh`
-              // filter: `blur(${100 - percent}px)`
+              // 
             }}
           />
           <Portrait
             style={{
-              height: `${Math.max(100 - percent * 0.5, 50)}vh`
+              height: `${Math.max(100 - percent * 0.5, 50)}vh`,
             }}
           />
           <Lips
@@ -82,12 +82,12 @@ const App = () => (
 
 const Icon = styled.img`
   width: 60%;
-  margin-top: 4px;
+  margin-top: 8px;
 `
 
 const Github = Icon.extend`
 width: 75%;
-margin-top: 2px;
+margin-top: 6px;
 `
 const Figma = Icon.extend`
   width: 40%;
@@ -105,17 +105,17 @@ const Links = styled.div`
 `;
 
 const Link = styled.div`
-  width: 22%;
-  padding: 1rem;
+  width: 23%;
+  padding: 0.5rem;
   color: white;
   box-sizing: border-box;
-  height: 20vh;
+  height: 25vh;
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
   font-family: "Vollkorn SC", serif;
   &:hover {
-    height: 25vh;
+    height: 30vh;
   }
 `;
 
@@ -150,7 +150,7 @@ const Face = styled.div`
 `;
 
 const Panel = styled.div`
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background-position: center 33%;
   background-size: cover;
