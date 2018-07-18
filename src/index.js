@@ -105,7 +105,8 @@ const Links = styled.div`
 `;
 
 const Link = styled.div`
-  width: 23%;
+  width: 25%;
+  max-width: 160px;
   padding: 0.5rem;
   color: white;
   box-sizing: border-box;
