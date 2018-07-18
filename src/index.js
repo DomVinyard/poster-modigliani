@@ -151,6 +151,7 @@ const Face = styled.div`
 
 const Panel = styled.div`
   width: 100vw;
+  max-width: 700px;
   height: 100vh;
   background-position: center 33%;
   background-size: cover;
@@ -162,8 +163,6 @@ const Panel = styled.div`
 
 const Background = Panel.extend`
   background-position: left;
-  width: 100vh;
-  height: 100vh;
   background-image: url(background.gif);
 `;
 
