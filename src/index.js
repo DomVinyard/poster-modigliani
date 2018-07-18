@@ -113,6 +113,7 @@ const Link = styled.div`
   color: white;
   box-sizing: border-box;
   height: 25vh;
+  max-height: 30vw;
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
