@@ -10,18 +10,18 @@ const App = () => (
         <Face style={{}}>
           <Background
             style={{
-              height: `${Math.max(100 - percent * 0.5, 50)}vh`
+              height: `${Math.max(90 - percent * 0.5, 50)}vh`
               // 
             }}
           />
           <Portrait
             style={{
-              height: `${Math.max(100 - percent * 0.5, 50)}vh`,
+              height: `${Math.max(90 - percent * 0.5, 50)}vh`,
             }}
           />
           <Lips
             style={{
-              height: `${Math.max(100 - percent * 0.5, 50)}vh`
+              height: `${Math.max(90 - percent * 0.5, 50)}vh`
             }}
           />
           <Info style={{ top: `${35 - percent / 50}vh` }}>
