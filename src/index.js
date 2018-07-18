@@ -115,20 +115,6 @@ const Link = styled.div`
   vertical-align: bottom;
   cursor: pointer;
   font-family: "Vollkorn SC", serif;
-  &:hover {
-    height: 30vh;
-  }
-`;
-
-const Info = styled.div`
-  color: white;
-  position: fixed;
-  z-index: 300;
-  top: 50vh;
-  height: 200px;
-  margin-top: -200px;
-  width: 100%;
-  z-index: 400;
 `;
 
 const Wrapper = styled.div`
@@ -164,7 +150,7 @@ const Panel = styled.div`
 `;
 
 const Background = Panel.extend`
-  background-position: left;
+  background-position: center;
   background-image: url(background.gif);
 `;
 
@@ -176,6 +162,19 @@ const Portrait = Panel.extend`
 const Lips = Panel.extend`
   background-image: url(lips.gif);
   z-index: 200;
+`;
+
+const Info = styled.div`
+  color: white;
+  position: fixed;
+  z-index: 300;
+  bottom: 50vh;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 80px;
+  width: 100vw;
+  max-width: 700px;
+  z-index: 400;
 `;
 
 
