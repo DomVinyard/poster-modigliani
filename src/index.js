@@ -34,7 +34,7 @@ const App = () => (
             <Link
               style={{
                 background: "#d631b5",
-                marginBottom: `-${100 - percent}%`
+                // marginBottom: `-${100 - percent}%`
               }}
             >
               <div>Code</div>
@@ -45,7 +45,7 @@ const App = () => (
             <Link
               style={{
                 background: "#b946b5",
-                marginBottom: `-${120 - percent * 1.2}%`
+                // marginBottom: `-${120 - percent * 1.2}%`
               }}
             >
               <div>Words</div>
@@ -56,7 +56,7 @@ const App = () => (
             <Link
               style={{
                 background: "#313d93",
-                marginBottom: `-${140 - percent * 1.4}%`
+                // marginBottom: `-${140 - percent * 1.4}%`
               }}
             >
               <div>Design</div>
@@ -67,7 +67,7 @@ const App = () => (
             <Link
               style={{
                 background: "#0f166b",
-                marginBottom: `-${160 - percent * 1.6}%`
+                // marginBottom: `-${160 - percent * 1.6}%`
               }}
             >
               <div>Contact</div>
@@ -97,7 +97,7 @@ const Email = Icon.extend``
 
 const Links = styled.div`
   color: white;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   max-width: 700px;
   width: 100%;
@@ -112,6 +112,7 @@ const Link = styled.div`
   height: 25vh;
   display: inline-block;
   overflow: hidden;
+  vertical-align: bottom;
   cursor: pointer;
   font-family: "Vollkorn SC", serif;
   &:hover {
@@ -133,9 +134,10 @@ const Info = styled.div`
 const Wrapper = styled.div`
   max-width: 700px;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   overflow: none;
   margin: 0 auto;
+  position: relative;
 `;
 
 const Face = styled.div`
