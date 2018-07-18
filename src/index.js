@@ -24,7 +24,7 @@ const App = () => (
               height: `${Math.max(90 - percent * 0.5, 50)}vh`
             }}
           />
-          <Info style={{ top: `${35 - percent / 50}vh` }}>
+          <Info style={{ top: `${30 + percent / 20}vh` }}>
             <Logo>daisyjay</Logo>
             <Contact />
           </Info>
