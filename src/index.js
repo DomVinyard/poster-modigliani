@@ -48,7 +48,7 @@ const App = () => (
                 // marginBottom: `-${120 - percent * 1.2}%`
               }}
             >
-              <div>Words</div>
+              <div>Ideas</div>
               <Medium src="logo_medium.png" />
             </Link>
           </a>
@@ -59,7 +59,7 @@ const App = () => (
                 // marginBottom: `-${140 - percent * 1.4}%`
               }}
             >
-              <div>Design</div>
+              <div>Designs</div>
               <Figma src="logo_figma.svg" />
             </Link>
           </a>
@@ -70,7 +70,7 @@ const App = () => (
                 // marginBottom: `-${160 - percent * 1.6}%`
               }}
             >
-              <div>Contact</div>
+              <div>Chat</div>
               <Email src="logo_email.png" />
             </Link>
           </a>
@@ -93,7 +93,9 @@ const Figma = Icon.extend`
   width: 40%;
 `
 const Medium = Icon.extend``
-const Email = Icon.extend``
+const Email = Icon.extend`
+margin-top: 6px;
+width: 65%;`
 
 const Links = styled.div`
   color: white;
