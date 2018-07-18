@@ -24,7 +24,7 @@ const App = () => (
               height: `${Math.max(100 - percent * 0.5, 50)}vh`
             }}
           />
-          <Info style={{ marginTop: -190 + percent }}>
+          <Info style={{ top: `${35 - percent / 50}vh` }}>
             <Logo>daisyjay</Logo>
             <Contact />
           </Info>
@@ -169,8 +169,6 @@ const Info = styled.div`
   color: white;
   position: fixed;
   z-index: 300;
-  bottom: 50vh;
-  margin-bottom: 20px;
   text-align: center;
   height: 80px;
   width: 100vw;
