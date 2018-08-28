@@ -24,8 +24,8 @@ const App = () => (
               height: `${Math.max(90 - percent * 0.5, 50)}vh`
             }}
           />
-          <Info style={{ top: `${30 + percent / 20}vh` }}>
-            <Logo>daisyjay</Logo>
+          <Info style={{ top: `${30 + percent / 20}vh`, }}>
+            <Logo style={{ marginLeft: `${3 - (percent / (200 / 3))}rem` }}>daisyjay</Logo>
             <Contact />
           </Info>
         </Face>
@@ -37,30 +37,18 @@ const App = () => (
                 // marginBottom: `-${100 - percent}%`
               }}
             >
-              <div>Code</div>
               <Github src="logo_github.png" />
             </Link>
           </a>
           <a href="https://medium.com/@daisyjay">
             <Link
+              middle
               style={{
                 background: "#b946b5",
                 // marginBottom: `-${120 - percent * 1.2}%`
               }}
             >
-              <div>Ideas</div>
               <Medium src="logo_medium.png" />
-            </Link>
-          </a>
-          <a href="https://www.figma.com/file/YaGF7pApchXVaN9f0UkcxFpL/daisyjay">
-            <Link
-              style={{
-                background: "#313d93",
-                // marginBottom: `-${140 - percent * 1.4}%`
-              }}
-            >
-              <div>Designs</div>
-              <Figma src="logo_figma.svg" />
             </Link>
           </a>
           <a href="mailto:chat@daisyjay.com">
@@ -70,7 +58,6 @@ const App = () => (
                 // marginBottom: `-${160 - percent * 1.6}%`
               }}
             >
-              <div>Chat</div>
               <Email src="logo_email.png" />
             </Link>
           </a>
@@ -82,19 +69,19 @@ const App = () => (
 
 const Icon = styled.img`
   width: 60%;
-  margin-top: 8px;
+  margin-top: 6px;
 `
 
 const Github = Icon.extend`
 width: 75%;
-margin-top: 6px;
+margin-top: 4px;
 `
 const Figma = Icon.extend`
   width: 40%;
 `
 const Medium = Icon.extend``
 const Email = Icon.extend`
-margin-top: 6px;
+margin-top: 4px;
 width: 65%;`
 
 const Links = styled.div`
@@ -107,18 +94,21 @@ const Links = styled.div`
 `;
 
 const Link = styled.div`
-  width: 25%;
+  width: 33%;
   max-width: 160px;
   padding: 0.5rem;
   color: white;
   box-sizing: border-box;
-  height: 25vh;
-  max-height: 50vw;
+  height: ${({ middle }) => middle ? '25vh' : '20vh'};
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
   cursor: pointer;
-  font-family: "Vollkorn SC", serif;
+  font-size: 3.5rem;
+  font-family: "Sue Ellen Francisco", cursive;
+  margin: 0 4px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 `;
 
 const Wrapper = styled.div`
@@ -183,7 +173,6 @@ const Info = styled.div`
 const Logo = styled.span`
   font-family: "Sue Ellen Francisco", cursive;
   font-size: 6rem;
-  margin-left: 2rem;
 `;
 
 const Contact = styled.div``;
